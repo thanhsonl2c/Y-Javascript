@@ -37,9 +37,27 @@
 // console.log(e, typeof e);
 // console.log(f, typeof f);
 
-/* */
-/* */
-/* */
+/* 7: Template Strings */
+// Template Strings use back-ticks (``) / ${}
+// let a = 5;
+// let b = 6;
+// console.log("String concatenation" + (a + b) + " and\nnot " + (a * b));
+// console.log(`Check String Template: a = ${a}, b = ${b}, a+b = ${a+b}`);
+
+/* 8: Object */
+// let object = {
+//     name: 'noS',
+//     age: 'hidden',
+//     nationality: 'vietnamese',
+// }
+// // let b = 'name';
+// // object[b] = 'Son';
+// console.log(`Name?`, object.name);
+// console.log(`Age?`, object.age);
+// console.log(object);
+
+/* 9: Arrays */
+
 /* */
 /* */
 /* */
