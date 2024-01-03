@@ -49,7 +49,7 @@
 //     name: 'noS',
 //     age: 'hidden',
 //     nationality: 'vietnamese',
-// }
+// } // key: value
 // // let b = 'name';
 // // object[b] = 'Son';
 // console.log(`Name?`, object.name);
@@ -57,8 +57,41 @@
 // console.log(object);
 
 /* 9: Arrays */
+// let arr = [
+//     'Team 1',
+//     'Team 2',
+//     'Team 3',
+// ]
+// console.log(arr);
+// console.log(`First Team:`, arr[0]);
+// console.log(`Last Team:`, arr[2]);
+// let player = [
+//     {
+//         name: 'Mudryk',
+//         age: '22',
+//         nationality: 'Ukraina',
+//     },
+//     {
+//         name: 'JackSon',
+//         age: '22',
+//         nationality: 'Senegal',
+//     },
+// ]
+// console.log(`Player information: `, player);
 
-/* */
+/* 10: == & === */
+// let a = 5;
+// let b = 5;
+// console.log('Compare a&b:', 'a =',a, ',', 'b =',b, ',', 'result:',a === b);
+// console.log(`Compare a&b: a = ${a}, b = ${b}, result:`, a === b);
+// // empty, null, undefined
+// let c; // undefined
+// let d = {}; // empty
+// let e = null; // null
+// console.log(c);
+// console.log(d);
+// console.log(e);
+
 /* */
 /* */
 /* */
