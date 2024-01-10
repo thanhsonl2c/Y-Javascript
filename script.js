@@ -83,8 +83,9 @@
 // let a = 5;
 // let b = 5;
 // console.log('Compare a&b:', 'a =',a, ',', 'b =',b, ',', 'result:',a === b);
-// console.log(`Compare a&b: a = ${a}, b = ${b}, result:`, a === b);
-// // empty, null, undefined
+// console.log(`Compare a&b: a = ${a}, b = ${b}, result:`, a === b);0
+
+// empty, null, undefined
 // let c; // undefined
 // let d = {}; // empty
 // let e = null; // null
@@ -92,8 +93,42 @@
 // console.log(d);
 // console.log(e);
 
-/* */
-/* */
+/* For loops */
+// for(let i = 1; i < 10; i++) {
+//     console.log('Check variable i =', i);
+// }
+
+// let arr = [
+//     'CHE',
+//     'MC',
+//     'TOT',
+//     'ARS',
+// ]
+// for(let i = 0; i < arr.length; i++) {
+//     console.log('Check variable i =', arr[i]);
+// }
+
+/* While/Do While Loops */
+// let arr = [
+//     'CHE',
+//     'MC',
+//     'TOT',
+//     'ARS',
+// ]
+// for (let i = 0; i < arr.length; i++) {
+//    console.log('Top', i + 1, arr[i]);  
+// }
+// var i = 0;
+// while(i < arr.length ) {
+//     console.log('Top', i + 1, arr[i]);  
+//     i++;
+// }
+
+// do {
+//     console.log('Top', i + 1, arr[i]);  
+//     i++;
+// } while (i < 1);
+
 /* */
 /* */
 /* */
