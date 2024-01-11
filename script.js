@@ -129,9 +129,61 @@
 //     i++;
 // } while (i < 1);
 
-/* */
-/* */
-/* */
+/* if/else statement */
+// let arr = [
+//     'CHE',
+//     'MC',
+//     'TOT',
+//     'ARS',
+// ]
+// let i = 0;
+// while(i < arr.length) {
+//     if(arr[i].length === 3) {
+//         console.log('condition', i + 1, arr[i]);  
+//     } else {
+//         console.log('condition', i + 1, arr[i]);  
+//     }
+//     i++;
+// }
+// for(let i = 0; i < arr.length; i++) {
+//     if(arr[i].length === 3) {
+//         console.log('condition', i + 1, arr[i]);  
+//     }
+// }
+
+/* Switch Case */
+// let day;
+// switch (new Date().getDay()) {
+//   case 0:
+//     day = "Sunday";
+//     break;
+//   case 1:
+//     day = "Monday";
+//     break;
+//   case 2:
+//     day = "Tuesday";
+//     break;
+//   case 3:
+//     day = "Wednesday";
+//     break;
+//   case 4:
+//     day = "Thursday";
+//     break;
+//   case 5:
+//     day = "Friday";
+//     break;
+//   case  6:
+//     day = "Saturday";
+// }
+// console.log('Check day: ', day);
+
+/* Variables & Block Scope */
+// for(let i = 0 ; i <= 10 ; i++) {
+//     console.log(i);
+// }
+// console.log(i);
+// https://www.w3schools.com/js/js_scope.asp
+
 /* */
 /* */
 /* */
