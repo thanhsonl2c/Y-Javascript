@@ -116,16 +116,16 @@
 //     'ARS',
 // ]
 // for (let i = 0; i < arr.length; i++) {
-//    console.log('Top', i + 1, arr[i]);  
+//    console.log('Top', i + 1, arr[i]);
 // }
 // var i = 0;
 // while(i < arr.length ) {
-//     console.log('Top', i + 1, arr[i]);  
+//     console.log('Top', i + 1, arr[i]);
 //     i++;
 // }
 
 // do {
-//     console.log('Top', i + 1, arr[i]);  
+//     console.log('Top', i + 1, arr[i]);
 //     i++;
 // } while (i < 1);
 
@@ -139,15 +139,15 @@
 // let i = 0;
 // while(i < arr.length) {
 //     if(arr[i].length === 3) {
-//         console.log('condition', i + 1, arr[i]);  
+//         console.log('condition', i + 1, arr[i]);
 //     } else {
-//         console.log('condition', i + 1, arr[i]);  
+//         console.log('condition', i + 1, arr[i]);
 //     }
 //     i++;
 // }
 // for(let i = 0; i < arr.length; i++) {
 //     if(arr[i].length === 3) {
-//         console.log('condition', i + 1, arr[i]);  
+//         console.log('condition', i + 1, arr[i]);
 //     }
 // }
 
@@ -184,11 +184,46 @@
 // console.log(i);
 // https://www.w3schools.com/js/js_scope.asp
 
-/* */
-/* */
-/* */
-/* */
-/* */
+/* Declare Functions */
+// function sum(a, b) {
+//     return a + b;
+// }
+// let c = sum(10, 10);
+// console.log('sum a + b :', c);
+
+/* Return */
+// function myFunc(a, b) {
+//     console.log('1');
+//     console.log('2');
+//     return;
+//     console.log('3');
+//     console.log('4');
+//     // a + b;
+//     // return a + b;
+// }
+// console.log('sum : ', myFunc(2, 3));
+
+/* Arrow Functions */
+//  let sum = (a, b) => {
+//     return a + b;
+//  }
+//  console.log(sum);
+
+/* Functions vs Method */
+// let sum = (a, b) => {
+//     return a + b;
+// }
+// console.log('Sum :', sum(6, 9));
+// let objSon = {
+//     name: 'Sontt',
+//     address: 'HaNam',
+//     getName: function() { // Method
+//         return this.name;
+//     }
+// }
+// console.log('Get Name Obj:', objSon.getName());
+
+/* Callbacks */
 /* */
 /* */
 /* */
