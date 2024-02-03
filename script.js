@@ -267,8 +267,18 @@
 //     return item;
 // });
 // console.log('Arr:', mapArr);
-/* */
-/* */
+
+/* Reduce */
+// let array1 = [1, 2, 3, 4];
+// let initialValue = 0;
+// let sumWithInitial = array1.reduce((accumulator, currentValue) => accumulator + currentValue, initialValue,);
+// console.log(sumWithInitial);
+
+/* Sort */
+// let arr = ['1', '4', '2', '120', '99'];
+// arr.sort((a, b) => a - b);
+// console.log(arr);
+
 /* */
 /* */
 /* */
