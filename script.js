@@ -224,8 +224,49 @@
 // console.log('Get Name Obj:', objSon.getName());
 
 /* Callbacks */
-/* */
-/* */
+// let sum = (a, b, callBack) => {
+//     let sumIn = a + b;
+//     setTimeout(()=> {
+//         callBack(sumIn);
+//     }, 2000)
+
+//     setInterval(() => {
+//         callBack(sumIn);
+//     }, 2000);
+// }
+// let printSum = (result) => {
+//     console.log('Sum a+b', result);
+// }
+// sum(6, 9, printSum);
+
+/* Filter/ Find */
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// let filter = arr.filter((item, index) => {
+//     // console.log(index);
+//     return item && item > 5;
+// });
+// console.log(filter);
+// let arr = [
+//     {name: 'Cat', age: '25'},
+//     {name: 'Dog', age: '26'},
+//     {name: 'Pig', age: '25'},
+//     {name: 'Tiger', age: '26'},
+// ]
+// let find = arr.find((item, index) => {
+//     return item && item.age == 26;
+// });
+// console.log(find);
+
+/* Map Arrays */
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// for (let i = 0; i < arr.length; i++) {
+//     console.log('arr i:', arr[i]);
+// }
+// let mapArr = arr.map((item, index) => {
+//     item = item * item
+//     return item;
+// });
+// console.log('Arr:', mapArr);
 /* */
 /* */
 /* */
