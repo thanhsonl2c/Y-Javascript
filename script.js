@@ -85,7 +85,7 @@
 // console.log('Compare a&b:', 'a =',a, ',', 'b =',b, ',', 'result:',a === b);
 // console.log(`Compare a&b: a = ${a}, b = ${b}, result:`, a === b);0
 
-// empty, null, undefined
+// 11: empty, null, undefined
 // let c; // undefined
 // let d = {}; // empty
 // let e = null; // null
@@ -93,11 +93,10 @@
 // console.log(d);
 // console.log(e);
 
-/* For loops */
+/* 12: For loops */
 // for(let i = 1; i < 10; i++) {
 //     console.log('Check variable i =', i);
 // }
-
 // let arr = [
 //     'CHE',
 //     'MC',
@@ -108,7 +107,7 @@
 //     console.log('Check variable i =', arr[i]);
 // }
 
-/* While/Do While Loops */
+/* 13: While/Do While Loops */
 // let arr = [
 //     'CHE',
 //     'MC',
@@ -123,13 +122,12 @@
 //     console.log('Top', i + 1, arr[i]);
 //     i++;
 // }
-
 // do {
 //     console.log('Top', i + 1, arr[i]);
 //     i++;
 // } while (i < 1);
 
-/* if/else statement */
+/* 14: if/else statement */
 // let arr = [
 //     'CHE',
 //     'MC',
@@ -151,7 +149,7 @@
 //     }
 // }
 
-/* Switch Case */
+/* 15: Switch Case */
 // let day;
 // switch (new Date().getDay()) {
 //   case 0:
@@ -177,21 +175,21 @@
 // }
 // console.log('Check day: ', day);
 
-/* Variables & Block Scope */
+/* 16: Variables & Block Scope */
 // for(let i = 0 ; i <= 10 ; i++) {
 //     console.log(i);
 // }
 // console.log(i);
 // https://www.w3schools.com/js/js_scope.asp
 
-/* Declare Functions */
+/* 17:Declare Functions */
 // function sum(a, b) {
 //     return a + b;
 // }
 // let c = sum(10, 10);
 // console.log('sum a + b :', c);
 
-/* Return */
+/* 18: Return */
 // function myFunc(a, b) {
 //     console.log('1');
 //     console.log('2');
@@ -203,13 +201,13 @@
 // }
 // console.log('sum : ', myFunc(2, 3));
 
-/* Arrow Functions */
+/* 19: Arrow Functions */
 //  let sum = (a, b) => {
 //     return a + b;
 //  }
 //  console.log(sum);
 
-/* Functions vs Method */
+/* 20: Functions vs Method */
 // let sum = (a, b) => {
 //     return a + b;
 // }
@@ -223,7 +221,7 @@
 // }
 // console.log('Get Name Obj:', objSon.getName());
 
-/* Callbacks */
+/* 21: Callbacks */
 // let sum = (a, b, callBack) => {
 //     let sumIn = a + b;
 //     setTimeout(()=> {
@@ -239,7 +237,7 @@
 // }
 // sum(6, 9, printSum);
 
-/* Filter/ Find */
+/* 22: Filter/ Find */
 // let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 // let filter = arr.filter((item, index) => {
 //     // console.log(index);
@@ -257,7 +255,7 @@
 // });
 // console.log(find);
 
-/* Map Arrays */
+/* 23: Map Arrays */
 // let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 // for (let i = 0; i < arr.length; i++) {
 //     console.log('arr i:', arr[i]);
@@ -268,21 +266,119 @@
 // });
 // console.log('Arr:', mapArr);
 
-/* Reduce */
+/* 24: Reduce */
 // let array1 = [1, 2, 3, 4];
 // let initialValue = 0;
 // let sumWithInitial = array1.reduce((accumulator, currentValue) => accumulator + currentValue, initialValue,);
 // console.log(sumWithInitial);
 
-/* Sort */
+/* 25: Sort */
 // let arr = ['1', '4', '2', '120', '99'];
 // arr.sort((a, b) => a - b);
 // console.log(arr);
 
-/* */
-/* */
-/* */
-/* */
-/* */
-/* */
-/* */
+/* 26: Lodash */
+// lodash.com
+
+/* 27: synchronous and asynchronous */
+// console.log(1);
+// console.log(2);
+// console.log(3);
+// console.log(4);
+
+// console.log(1);
+// console.log(2);
+// setTimeout(() => {
+//     console.log('run 3s');
+// }, 3000)
+// console.log(3);
+// console.log(4);
+
+
+/* 28: HTTP Requests (API url)  */
+// jsonplaceholder.typicode.com
+// var xhttp = new XMLHttpRequest();
+// xhttp.onreadystatechange = function() {
+//     if (this.readyState == 4) {
+//        console.log('check', xhttp.responseText);
+//     }
+// };
+// xhttp.open("GET", "https://jsonplaceholder.typicode.com/todos/1", true);
+// xhttp.send();
+
+// var request = new XMLHttpRequest();
+// request.onreadystatechange = function() {
+//     if (this.readyState == 4) {//        console.log('check', request);
+//     }
+// };
+// request.open("GET", "https://jsonplaceholder.typicode.com/todos/1", true);
+// request.send();
+
+/* Status Code */
+// var request = new XMLHttpRequest();
+// request.onreadystatechange = function() {
+//     if (this.readyState == 4 && request.status === 200) {
+//         console.log(this.readyState);       
+//         console.log('check', request);
+//     } else {
+//         console.log('status', request.status);
+//     }
+// };
+// request.open("GET", "https://jsonplaceholder.typicode.com/todos/1", true);
+// request.send();
+
+/* Callback Functions */
+// const getCallBack = (err, data) => {
+//     if(err) {
+//         console.log('get Err', err);
+//     }
+//     if(data) {
+//         console.log('get Data', data);
+//     }
+// }
+// function callBack(getCallBack) {
+//     var request = new XMLHttpRequest();
+//     request.onreadystatechange = function() {
+//         if (this.readyState == 4 && request.status === 200) {
+//             // console.log(this.readyState);       
+//             const data = request.responseText
+//             getCallBack(undefined, data);
+//         } 
+//         if (this.readyState == 4 && request.status !== 200) {
+//             getCallBack('false', undefined);
+//         }
+//     };
+//     request.open("GET", "https://jsonplaceholder.typicode.com/posts", true);
+//     request.send();
+// }
+// callBack(getCallBack);
+
+/* Using JSON data */
+// const getCallBack = (err, data) => {
+//     if(err) {
+//         console.log('get Err', err);
+//     }
+//     if(data) {
+//         console.log('get Data', data);
+//     }
+// }
+// function callBack(getCallBack) {
+//     var request = new XMLHttpRequest();
+//     request.onreadystatechange = function() {
+//         if (this.readyState == 4 && request.status === 200) {
+//             // console.log(this.readyState);       
+//             const data = JSON.parse(request.responseText);
+//             const dataString = JSON.stringify(data);
+//             console.log(dataString);
+//             getCallBack(undefined, data);
+//         } 
+//         if (this.readyState == 4 && request.status !== 200) {
+//             getCallBack('false', undefined);
+//         }
+//     };
+//     request.open("GET", "https://jsonplaceholder.typicode.com/posts", true);
+//     request.send();
+// }
+// callBack(getCallBack);
+
+/* CallBack Hell */
