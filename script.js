@@ -294,7 +294,6 @@
 // console.log(3);
 // console.log(4);
 
-
 /* 28: HTTP Requests (API url)  */
 // jsonplaceholder.typicode.com
 // var xhttp = new XMLHttpRequest();
@@ -314,11 +313,11 @@
 // request.open("GET", "https://jsonplaceholder.typicode.com/todos/1", true);
 // request.send();
 
-/* Status Code */
+/* 29: Status Code */
 // var request = new XMLHttpRequest();
 // request.onreadystatechange = function() {
 //     if (this.readyState == 4 && request.status === 200) {
-//         console.log(this.readyState);       
+//         console.log(this.readyState);
 //         console.log('check', request);
 //     } else {
 //         console.log('status', request.status);
@@ -327,7 +326,7 @@
 // request.open("GET", "https://jsonplaceholder.typicode.com/todos/1", true);
 // request.send();
 
-/* Callback Functions */
+/* 30: Callback Functions */
 // const getCallBack = (err, data) => {
 //     if(err) {
 //         console.log('get Err', err);
@@ -340,10 +339,10 @@
 //     var request = new XMLHttpRequest();
 //     request.onreadystatechange = function() {
 //         if (this.readyState == 4 && request.status === 200) {
-//             // console.log(this.readyState);       
+//             // console.log(this.readyState);
 //             const data = request.responseText
 //             getCallBack(undefined, data);
-//         } 
+//         }
 //         if (this.readyState == 4 && request.status !== 200) {
 //             getCallBack('false', undefined);
 //         }
@@ -353,7 +352,7 @@
 // }
 // callBack(getCallBack);
 
-/* Using JSON data */
+/* 31: Using JSON data */
 // const getCallBack = (err, data) => {
 //     if(err) {
 //         console.log('get Err', err);
@@ -366,12 +365,12 @@
 //     var request = new XMLHttpRequest();
 //     request.onreadystatechange = function() {
 //         if (this.readyState == 4 && request.status === 200) {
-//             // console.log(this.readyState);       
+//             // console.log(this.readyState);
 //             const data = JSON.parse(request.responseText);
 //             const dataString = JSON.stringify(data);
 //             console.log(dataString);
 //             getCallBack(undefined, data);
-//         } 
+//         }
 //         if (this.readyState == 4 && request.status !== 200) {
 //             getCallBack('false', undefined);
 //         }
@@ -381,4 +380,116 @@
 // }
 // callBack(getCallBack);
 
-/* CallBack Hell */
+/* 32:  JS Promises */
+// const promises = () => {
+//     return new Promise((resolve, reject) => {
+//         resolve('is resolve');
+//     });
+// }
+// promises().then(data => {
+//     console.log(data);
+// });
+
+// const promises = () => {
+//   return new Promise((resolve, reject) => {
+//     reject("is reject");
+//   });
+// };
+// promises().then((data) => {
+//     // console.log(data);
+// })
+// .catch(error => {
+//     console.log('error');
+// });
+
+// const getCallBack = (err, data) => {
+//     if(err) {
+//         console.log('get Err', err);
+//     }
+//     if(data) {
+//         console.log('get Data', data);
+//     }
+// }
+
+// function callBack(id, callBack) {
+//     return new Promise((resolve, reject) => {
+//         var request = new XMLHttpRequest();
+//         request.onreadystatechange = function() {
+//             if (this.readyState == 4 && request.status === 200) {
+//                 // console.log(this.readyState);
+//                 const data = JSON.parse(request.responseText);
+//                 const dataString = JSON.stringify(data);
+//                 resolve(data)
+//             }
+//             if (this.readyState == 4 && request.status !== 200) {
+//                 reject('false')
+//             }
+//         };
+//         request.open("GET", "https://jsonplaceholder.typicode.com/posts", true);
+//         request.send();
+//     })
+// }
+// callBack(1).then( data => {
+//     console.log('resolve data:', data);
+// }).catch(error => {
+//     console.log('reject data:', error);
+// })
+
+/* 33: Chaining Promises */
+
+/* 34: Fetch API */
+// fetch('https://jsonplaceholder.typicode.com/todos/1')
+// // .then(data => {
+// //     console.log('check fetch data: ', data);
+// // })
+// .then(Response => {
+//     return Response.json();
+// })
+// .then(data => {
+//     console.log('check fetch data:', data);
+// })
+
+/* 35: Async & Await */
+// const asAw = async (id) => {
+//     let response = await fetch(`https://jsonplaceholder.typicode.com/todos/${id}`)
+//     let data = await response.json()
+//     // console.log(data);
+//     return data;
+// }
+// asAw(5).then(data => {
+//     console.log('check data:', data);
+// })
+
+/* 36: Throwing Errors */
+// const asAw = async (id) => {
+//     let response = await fetch(`https://jsonplaceholder.typicode.com/todos/${id}`)
+//     if(response && response !== 200) {
+//         throw new Error('err code:' + response.status)
+//     }
+//     let data = await response.json()
+//     return data;
+// }
+// asAw('aaa').then(data => {
+//     console.log('check data:', data);
+// }).catch(err => {
+//     console.log('check err:', err.message);
+// })
+
+/* Destructuring */
+// ...copy
+// let arr = [1,2,3,4,5]
+// console.log(arr);
+// let arr1 = [...arr, 6]
+// console.log(arr1);
+// let state = {
+//     name: 'Son',
+//     address: 'hn',
+// }
+// let state2 = {...state, interest: 'ball'}
+// console.log(state2);
+// let {name, address} = state; 
+// console.log(name, address);
+// const [name, setName] = useState();
+// let arr = ['son', '7', 'korea']
+// let [name, number, international] = arr;
+// console.log(name, number, international);
